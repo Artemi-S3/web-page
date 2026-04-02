@@ -34,8 +34,16 @@ body {
   font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
   color: var(--text-main);
   background:
-    radial-gradient(circle at 14% -8%, rgba(66, 108, 180, 0.35), transparent 35%),
-    radial-gradient(circle at 85% -8%, rgba(245, 191, 46, 0.18), transparent 28%),
+    radial-gradient(
+      circle at 14% -8%,
+      rgba(66, 108, 180, 0.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% -8%,
+      rgba(245, 191, 46, 0.18),
+      transparent 28%
+    ),
     linear-gradient(180deg, var(--bg-soft), var(--bg));
 }
 
@@ -129,9 +137,11 @@ a:hover {
 .navOption[href="./"] {
   border-color: var(--accent);
   color: var(--accent);
-  background: linear-gradient(180deg,
-      rgba(245, 191, 46, 0.16),
-      rgba(245, 191, 46, 0.06));
+  background: linear-gradient(
+    180deg,
+    rgba(245, 191, 46, 0.16),
+    rgba(245, 191, 46, 0.06)
+  );
 }
 
 main {
@@ -167,7 +177,11 @@ main {
   padding: 1.2rem;
   border: 1px solid var(--border-strong);
   border-radius: 0.7rem;
-  background: linear-gradient(180deg, rgba(8, 27, 59, 0.75), rgba(4, 17, 42, 0.92));
+  background: linear-gradient(
+    180deg,
+    rgba(8, 27, 59, 0.75),
+    rgba(4, 17, 42, 0.92)
+  );
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
@@ -181,7 +195,7 @@ main {
   pointer-events: none;
 }
 
-.content>* {
+.content > * {
   position: relative;
   z-index: 1;
 }
@@ -190,7 +204,11 @@ main {
   border: 1px solid var(--border);
   border-radius: 0.65rem;
   padding: 0.85rem 1.2rem;
-  background: linear-gradient(180deg, rgba(10, 31, 66, 0.82), rgba(6, 19, 40, 0.95));
+  background: linear-gradient(
+    180deg,
+    rgba(10, 31, 66, 0.82),
+    rgba(6, 19, 40, 0.95)
+  );
   box-shadow: inset 0 1px 0 rgba(206, 222, 250, 0.08);
   transition: border-color 0.2s ease;
 }
