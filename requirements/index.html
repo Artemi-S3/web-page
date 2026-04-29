@@ -63,10 +63,7 @@
               Limited file visualization, they cannot view file previews,
               summaries, or the files themselves from the browser.
             </li>
-            <li>
-              Security risks could be going undetected without the proper audit
-              tools.
-            </li>
+            <li>No organization and collaboration tools such as file tags.</li>
           </ul>
         </div>
 
@@ -119,14 +116,13 @@
                   system for public S3 data managers.
                 </li>
                 <li>
-                  <b>Optional Visualization:</b> Map-based visualization for
-                  spatial metadata.
+                  <b>Visualization:</b> Map-based visualization for geo-spatial
+                  metadata.
                 </li>
               </ul>
             </div>
             <div id="functional-requirements">
               <h3>Functional Requirements</h3>
-              <label>Must Have (MVP requirements)</label>
               <ul class="req-list">
                 <li>
                   <b>File Retrieval:</b> Backend processes search queries and
@@ -152,9 +148,6 @@
                   <b>Index Refresh:</b> Update search index when new S3 files
                   are added.
                 </li>
-              </ul>
-              <label>Should Have</label>
-              <ul class="req-list">
                 <li>
                   <b>Directory-Style Browsing:</b> File/folder explorer for
                   search results or full bucket.
@@ -163,17 +156,8 @@
                   <b>File Downloads:</b> Download files directly from the UI.
                 </li>
                 <li>
-                  <b>Search Snapshot Caching:</b> Automatic Meilisearch backups.
-                </li>
-                <li>
                   <b>User Tagging:</b> Tag and annotate files for organization
                   and collaboration.
-                </li>
-              </ul>
-              <label>Could Have</label>
-              <ul class="req-list">
-                <li>
-                  <b>User Accounts:</b> Personal settings and separate indexes.
                 </li>
                 <li>
                   <b>Search History:</b> Recent searches for quick retrieval.
@@ -181,13 +165,6 @@
                 <li>
                   <b>Geo-spatial Visualization:</b> In-browser map previews of
                   geo-spatial files.
-                </li>
-                <li>
-                  <b>Security Analysis:</b> Bucket policy and ACL auditing.
-                </li>
-                <li>
-                  <b>Hot Path Caching:</b> Speed enhancement for popular
-                  queries.
                 </li>
               </ul>
             </div>
@@ -220,31 +197,6 @@
                 <li>
                   <b>Usability:</b> Users must be able to complete a search
                   within 2 minutes of entry.
-                </li>
-              </ul>
-            </div>
-            <div id="environmental-requirements">
-              <h3>Environmental Requirements</h3>
-              <ul>
-                <li>
-                  <b>AWS Hosting:</b> Deployed on AWS EC2 via Docker Compose.
-                </li>
-                <li>
-                  <b>Open Source:</b> Fully open-source and publicly available
-                  on GitHub.
-                </li>
-                <li>
-                  <b>Tech Stack:</b> Python + FastAPI, Svelte + Tailwind,
-                  PostgreSQL, Meilisearch.
-                </li>
-                <li><b>CI/CD:</b> Automated GitHub Actions pipeline.</li>
-                <li>
-                  <b>Monitoring:</b> Logs and metrics integrated with AWS
-                  CloudWatch.
-                </li>
-                <li>
-                  <b>Browser Accessibility:</b> Works across all major modern
-                  browsers.
                 </li>
               </ul>
             </div>
